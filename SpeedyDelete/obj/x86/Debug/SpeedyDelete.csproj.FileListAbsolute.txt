@@ -1,0 +1,12 @@
+C:\Users\mdemin\AppData\Local\Temporary Projects\SpeedyDelete\bin\Debug\SpeedyDelete.exe.config
+C:\Users\mdemin\AppData\Local\Temporary Projects\SpeedyDelete\bin\Debug\SpeedyDelete.exe
+C:\Users\mdemin\AppData\Local\Temporary Projects\SpeedyDelete\bin\Debug\SpeedyDelete.pdb
+C:\Users\mdemin\AppData\Local\Temporary Projects\SpeedyDelete\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mdemin\AppData\Local\Temporary Projects\SpeedyDelete\obj\x86\Debug\SpeedyDelete.exe
+C:\Users\mdemin\AppData\Local\Temporary Projects\SpeedyDelete\obj\x86\Debug\SpeedyDelete.pdb
+C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Debug\SpeedyDelete.exe.config
+C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Debug\SpeedyDelete.exe
+C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Debug\SpeedyDelete.pdb
+C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Debug\SpeedyDelete.exe
+C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Debug\SpeedyDelete.pdb
+C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Debug\ResolveAssemblyReference.cache
