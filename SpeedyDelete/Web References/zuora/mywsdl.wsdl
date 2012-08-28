@@ -677,6 +677,9 @@
           <xs:extension base="ons:zObject">
             <xs:sequence>
               <xs:element minOccurs="0" name="AccountingCode" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ProductCategory__c" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="ParentAccount__c" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="AccountDesc__c" nillable="true" type="xs:string" />
               <xs:element minOccurs="0" name="DiscountApplied__c" nillable="true" type="xs:decimal" />
               <xs:element minOccurs="0" name="BillCycleDay" nillable="true" type="xs:int" />
               <xs:element minOccurs="0" name="BillCycleType" nillable="true" type="xs:string" />

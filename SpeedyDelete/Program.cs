@@ -10,13 +10,13 @@ namespace SpeedyDelete
     class Program
     {
 
-        static string USERNAME = "maksim.demin-ey@zuora.com";
-        static string PASSWORD = "!Foid3168";
+        static string USERNAME = "maks.telstra@zuora.com";
+        static string PASSWORD = "Zuora001";
 
-        static string ENDPOINT = "https://apisandbox.zuora.com/apps/services/a/38.0";
+        static string ENDPOINT = "https://www.zuora.com/apps/services/a/38.0";
         private zuora.ZuoraService binding;
-        string querystring = "select Id from ProductRatePlan where ProductId='2c92c0f9384a244701384e13b78e3962'";
-        string delObject = "ProductRatePlan";
+        string querystring = "SELECT id from Account where createdbyid = '2c92a0fb394cb92c013968fb16fb619c'";
+        string delObject = "Account";
         //
         //Vars
         //
