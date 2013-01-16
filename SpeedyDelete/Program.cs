@@ -46,10 +46,8 @@ namespace SpeedyDelete
         public Program()
         {
             
-            binding = new zuora.ZuoraService();
-            binding.Url = ENDPOINT;
-            binding.Timeout = 600000;
 
+            Console.WriteLine("***** Warning Use At Your Own Risk *****");
             Console.WriteLine("Enter user name: ");
             username = Console.ReadLine();
 
@@ -68,10 +66,25 @@ namespace SpeedyDelete
             {
                 ENDPOINT = "https://apisandbox.zuora.com/apps/services/a/38.0";
             }
-            else if(pors == "P")
+            else if (pors == "P")
             {
                 ENDPOINT = "https://www.zuora.com/apps/services/a/38.0";
             }
+            else if(pors != null)
+            {
+                ENDPOINT = pors;
+            }
+            binding = new zuora.ZuoraService();
+            binding.Url = ENDPOINT;
+            binding.Timeout = 600000;
+
+            Console.WriteLine("Number of Threads: ");
+            String numThreadsStr = Console.ReadLine();
+            numThreads = Convert.ToInt32(numThreadsStr);
+
+            Console.WriteLine("Number of Objects To Delete: ");
+            String numObjectsStr = Console.ReadLine();
+            numToDelete = Convert.ToInt32(numObjectsStr);
 
             qResult = new QueryResult();
         }
