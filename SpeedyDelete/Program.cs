@@ -60,7 +60,7 @@ namespace SpeedyDelete
             Console.WriteLine("Enter Object thats being deleted");
             delObject = Console.ReadLine();
 
-            Console.WriteLine("Production or Sandbox? Enter P or S");
+            Console.WriteLine("Production or Sandbox? Enter P or S or someother endpoint WSDL 38");
             String pors = Console.ReadLine();
             if (pors == "S")
             {
