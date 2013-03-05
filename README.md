@@ -1,8 +1,8 @@
 #SpeedyDelete
-    Tool to quickly delete things by a query.
+	Tool to quickly delete things by a query.
 
 #Legal Notice
-  Copyright (c) 2013 Zuora, Inc.
+  	Copyright (c) 2013 Zuora, Inc.
 	
 	Permission is hereby granted, free of charge, to any person obtaining a copy of 
 	this software and associated documentation files (the "Software"), to use copy, 
