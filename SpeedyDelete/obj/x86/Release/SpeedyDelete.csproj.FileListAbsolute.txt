@@ -1,0 +1,8 @@
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Release\SpeedyDelete.exe.config
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Release\SpeedyDelete.exe
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Release\SpeedyDelete.XmlSerializers.dll
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Release\SpeedyDelete.pdb
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Release\SpeedyDelete.exe
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Release\SpeedyDelete.pdb
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Release\SpeedyDelete.XmlSerializers.dll
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Release\SpeedyDelete.csprojResolveAssemblyReference.cache

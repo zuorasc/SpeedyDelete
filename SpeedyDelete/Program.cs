@@ -10,18 +10,18 @@ namespace SpeedyDelete
     class Program
     {
 
-        static string USERNAME = "<account-name>";
-        static string PASSWORD = "<password>";
+        String username = "";
+        String password = "";
 
-        static string ENDPOINT = "https://<endpoint>.zuora.com/apps/services/a/38.0";
+        static string ENDPOINT = "https://www.zuora.com/apps/services/a/38.0";
         private zuora.ZuoraService binding;
-        string querystring = "SELECT id from Account where createdbyid = '2c92a0fb394cb92c013968fb16fb619c'";
-        string delObject = "";
+        String querystring = "SELECT id from account";
+        String delObject = "account";
         //
         //Vars
         //
-        int numThreads = 20;
-        int numToDelete = 50;
+        int numThreads = 64;
+        int numToDelete = 5;
         DateTime dt = new DateTime(2012, 6, 11);
         //string querystring;
 
@@ -46,9 +46,46 @@ namespace SpeedyDelete
         public Program()
         {
             
+
+            Console.WriteLine("***** Warning Use At Your Own Risk *****");
+            Console.WriteLine("Enter user name: ");
+            username = Console.ReadLine();
+
+            Console.WriteLine("Enter password: ");
+            password = Console.ReadLine();
+
+            Console.WriteLine("Enter query string: ");
+            querystring = Console.ReadLine();
+
+            Console.WriteLine("Enter Object thats being deleted");
+            delObject = Console.ReadLine();
+
+            Console.WriteLine("Production or Sandbox? Enter P or S or someother endpoint WSDL 38");
+            String pors = Console.ReadLine();
+            if (pors == "S")
+            {
+                ENDPOINT = "https://apisandbox.zuora.com/apps/services/a/38.0";
+            }
+            else if (pors == "P")
+            {
+                ENDPOINT = "https://www.zuora.com/apps/services/a/38.0";
+            }
+            else if(pors != null)
+            {
+                ENDPOINT = pors;
+            }
             binding = new zuora.ZuoraService();
             binding.Url = ENDPOINT;
-            binding.Timeout = 300000;
+            binding.Timeout = 600000;
+
+            Console.WriteLine("Number of Threads: ");
+            String numThreadsStr = Console.ReadLine();
+            numThreads = Convert.ToInt32(numThreadsStr);
+
+            Console.WriteLine("Number of Objects To Delete: ");
+            String numObjectsStr = Console.ReadLine();
+            numToDelete = Convert.ToInt32(numObjectsStr);
+
             qResult = new QueryResult();
         }
         //
@@ -61,6 +98,7 @@ namespace SpeedyDelete
             zObject[] queryRes = doQuery();
 
             Console.WriteLine("Size: " + queryRes.Length);
+            Console.WriteLine("Press Enter to Continue..." + queryRes.Length);
             Console.ReadKey();
             
             handleQuery(queryRes);
@@ -203,7 +241,7 @@ namespace SpeedyDelete
             {
                 //execute the login placing the results  
                 //in a LoginResult object 
-                zuora.LoginResult loginResult = binding.login(USERNAME, PASSWORD);
+                zuora.LoginResult loginResult = binding.login(username, password);
 
                 //set the session id header for subsequent calls 
                 binding.SessionHeaderValue = new zuora.SessionHeader();
@@ -244,10 +282,7 @@ namespace SpeedyDelete
         }
 
         private bool delete(String type, string[] ids)
-        {
-
-
-            
+        {           
             DeleteResult[] result = binding.delete(type, ids);
             for (int i = 0; i < result.Length; i++)
             {

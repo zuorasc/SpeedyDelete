@@ -9,4 +9,4 @@ C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\
 C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Debug\SpeedyDelete.pdb
 C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Debug\SpeedyDelete.exe
 C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\bin\Debug\SpeedyDelete.pdb
-C:\Users\mdemin\documents\visual studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\mdemin\Documents\Visual Studio 2010\Projects\SpeedyDelete\SpeedyDelete\obj\x86\Debug\SpeedyDelete.csprojResolveAssemblyReference.cache
